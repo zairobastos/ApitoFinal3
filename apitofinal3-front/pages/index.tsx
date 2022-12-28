@@ -1,8 +1,12 @@
+import Header from "../components/paginaInicial/header";
+import Section from "../components/paginaInicial/inicio";
+
 const Home = () => {
 	return (
-		<>
-			<h1 className="text-3xl font-bold">Hello world!</h1>
-		</>
+		<div className="bg-gray-900 flex flex-col">
+			<Header />
+			<Section />
+		</div>
 	);
 };
 export default Home;
