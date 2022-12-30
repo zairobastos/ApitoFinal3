@@ -1,8 +1,8 @@
 import Image from "next/image";
-import Jogador from "../../../assets/images/jogador.svg";
-const Section = () => {
+import Jogador from "../../../assets/images/paginaInicial/jogador.svg";
+const Inicio = () => {
 	return (
-		<section className="flex flex-wrap flex-row justify-between px-16 mt-181">
+		<section className="flex flex-wrap flex-row justify-between mt-181">
 			<main className="w-2/4 flex flex-col flex-wrap justify-center gap-4">
 				<h2 className="font-sans font-normal text-42px text-black-900">
 					Bem-vindo ao{" "}
@@ -23,4 +23,4 @@ const Section = () => {
 	);
 };
 
-export default Section;
+export default Inicio;
