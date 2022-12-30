@@ -9,7 +9,7 @@ export interface dateCards {
 const Card = ({ image, title, description }: dateCards) => {
 	return (
 		<>
-			<div className="flex flex-col flex-wrap gap-3 w-1/4 justify-center">
+			<div className="flex flex-col flex-wrap gap-3 w-1/4 justify-center bg-gray-900">
 				<figure className="flex justify-center">
 					{image == "" ? (
 						<Image src={Gratuidade} alt="Gratuidade" />
