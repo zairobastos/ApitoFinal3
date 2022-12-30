@@ -1,5 +1,6 @@
 import Image from "next/image";
-interface dateCards {
+import Gratuidade from "../../../assets/images/paginaInicial/gratuito.svg";
+export interface dateCards {
 	image: string;
 	title: string;
 	description: string;
@@ -10,7 +11,11 @@ const Card = ({ image, title, description }: dateCards) => {
 		<>
 			<div className="flex flex-col flex-wrap gap-3 w-1/4 justify-center">
 				<figure className="flex justify-center">
-					<Image src={image} alt="Gratuidade" />
+					{image == "" ? (
+						<Image src={Gratuidade} alt="Gratuidade" />
+					) : (
+						<Image src={image} alt="Gratuidade" />
+					)}
 				</figure>
 				<h4 className="font-sans font-normal text-black-900 text-2xl leading-8 text-center">
 					{title}
