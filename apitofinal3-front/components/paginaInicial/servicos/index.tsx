@@ -8,13 +8,19 @@ import Campo from "../../../assets/images/paginaInicial/campo.svg";
 import Escudo from "../../../assets/images/paginaInicial/escudo.svg";
 
 import Card from "./card";
+import Text from "../../Text";
 const Servicos = () => {
 	return (
 		<section className="flex flex-row flex-wrap justify-between items-start">
 			<div className="flex flex-col flex-wrap gap-5 w-7/12">
-				<h1 className="text-black-900 uppercase text-5xl leading-12 font-sans font-normal text-left">
-					Serviços
-				</h1>
+				<Text
+					asChild={true}
+					fontSize="text-5xl"
+					lineHeight="leading-12"
+					fontCase="uppercase"
+				>
+					<h1>Serviços</h1>
+				</Text>
 				<div className="flex flex-wrap flex-col gap-4">
 					<Card
 						image={Trofeu}

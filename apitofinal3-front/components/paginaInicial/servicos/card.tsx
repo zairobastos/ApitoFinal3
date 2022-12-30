@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Trofeu from "../../../assets/images/paginaInicial/trofeu.svg";
+import Text from "../../Text";
 export interface dataCard {
 	image: string;
 	description: string;
@@ -16,9 +17,13 @@ const Card = ({ image, description, widthImage }: dataCard) => {
 						<Image src={image} alt="Icone" width={widthImage} />
 					)}
 				</figure>
-				<p className="font-sans text-black-900 text-1xl font-light">
-					{description}
-				</p>
+				<Text
+					asChild={true}
+					fontSize="text-1xl"
+					fontWeight="font-light"
+				>
+					<p>{description}</p>
+				</Text>
 			</div>
 		</>
 	);

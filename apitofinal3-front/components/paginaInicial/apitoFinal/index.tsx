@@ -2,12 +2,20 @@ import Gratuidade from "../../../assets/images/paginaInicial/gratuito.svg";
 import Flexivel from "../../../assets/images/paginaInicial/flexivel.svg";
 import Classificacao from "../../../assets/images/paginaInicial/classificacao.svg";
 import Card from "./card";
+import Text from "../../Text";
 const ApitoFinal = () => {
 	return (
 		<main className="flex flex-col flex-wrap gap-14">
-			<h1 className="text-green-100 uppercase text-5xl leading-12 font-sans font-normal text-center">
-				apito Final
-			</h1>
+			<Text
+				asChild={true}
+				fontColor="text-green-100"
+				fontSize="text-5xl"
+				textAlign="center"
+				lineHeight="leading-12"
+				fontCase="uppercase"
+			>
+				<h1>apito Final</h1>
+			</Text>
 			<div className="flex flex-wrap flex-row w-full justify-between items-start">
 				<Card
 					image={Gratuidade}

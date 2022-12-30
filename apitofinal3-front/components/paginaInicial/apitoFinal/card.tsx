@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Gratuidade from "../../../assets/images/paginaInicial/gratuito.svg";
+import Text from "../../Text";
 export interface dateCards {
 	image: string;
 	title: string;
@@ -17,12 +18,24 @@ const Card = ({ image, title, description }: dateCards) => {
 						<Image src={image} alt="Gratuidade" />
 					)}
 				</figure>
-				<h4 className="font-sans font-normal text-black-900 text-2xl leading-8 text-center">
-					{title}
-				</h4>
-				<p className="font-sans font-light text-black-100 text-2xl leading-8 text-center">
-					{description}
-				</p>
+				<Text
+					asChild={true}
+					fontSize="text-2xl"
+					textAlign="center"
+					lineHeight="leading-8"
+				>
+					<h4>{title}</h4>
+				</Text>
+				<Text
+					asChild={true}
+					fontSize="text-2xl"
+					textAlign="center"
+					lineHeight="leading-8"
+					fontColor="text-black-100"
+					fontWeight="font-light"
+				>
+					<p>{description}</p>
+				</Text>
 			</div>
 		</>
 	);
