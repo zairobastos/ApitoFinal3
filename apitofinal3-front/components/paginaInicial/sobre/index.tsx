@@ -2,7 +2,7 @@ import Text from "../../Text";
 
 const Sobre = () => {
 	return (
-		<footer className="flex flex-col flex-wrap gap-3">
+		<footer className="flex flex-col flex-wrap gap-3" id="sobre">
 			<Text
 				asChild={true}
 				fontSize="text-5xl"

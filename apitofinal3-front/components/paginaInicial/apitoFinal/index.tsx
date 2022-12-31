@@ -5,7 +5,7 @@ import Card from "./card";
 import Text from "../../Text";
 const ApitoFinal = () => {
 	return (
-		<main className="flex flex-col flex-wrap gap-14">
+		<main className="flex flex-col flex-wrap gap-14" id="apitofinal">
 			<Text
 				asChild={true}
 				fontColor="text-green-100"

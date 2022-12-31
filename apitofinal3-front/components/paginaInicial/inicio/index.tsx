@@ -3,7 +3,10 @@ import Jogador from "../../../assets/images/paginaInicial/jogador.svg";
 import Text from "../../Text";
 const Inicio = () => {
 	return (
-		<section className="flex flex-wrap flex-row justify-between mt-181">
+		<section
+			className="flex flex-wrap flex-row justify-between mt-181"
+			id="inicio"
+		>
 			<main className="w-2/4 flex flex-col flex-wrap justify-center gap-4">
 				<Text asChild={true} fontSize="text-42px">
 					<h2>

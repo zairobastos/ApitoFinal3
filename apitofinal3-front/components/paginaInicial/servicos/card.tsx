@@ -21,6 +21,7 @@ const Card = ({ image, description, widthImage }: dataCard) => {
 					asChild={true}
 					fontSize="text-1xl"
 					fontWeight="font-light"
+					textAlign="left"
 				>
 					<p>{description}</p>
 				</Text>
