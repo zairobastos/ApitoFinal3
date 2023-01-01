@@ -6,13 +6,25 @@ module.exports = {
 	],
 	theme: {
 		colors: {
-			"black-900": "#020905",
-			"black-100": "#02090580",
-			"gray-900": "#f9f9f9",
-			"gray-500": "#e8e6e6",
-			"green-100": "#00c041",
-			"green-800": "#018d30",
+			black: {
+				900: "#020905",
+				100: "#02090580",
+				300: "#3c3c3c",
+			},
+			gray: {
+				900: "#f9f9f9",
+				700: "#7c7c7c",
+				600: "#e6e6e6",
+				500: "#e8e6e6",
+				400: "#a2a2a2",
+			},
+			green: {
+				100: "#00c041",
+				800: "#018d30",
+			},
+			"red-800": "#f54a48",
 			white: "#fff",
+			transparent: "transparent",
 		},
 		fontFamily: {
 			sans: ["League Spartan"],
@@ -28,6 +40,7 @@ module.exports = {
 			"42xl": "2.25rem",
 			"42px": "2.625rem",
 			"5xl": "3rem",
+			"6xl": "4rem",
 		},
 		extend: {
 			margin: {

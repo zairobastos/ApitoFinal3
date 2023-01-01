@@ -3,14 +3,19 @@ import { ReactNode } from "react";
 import clsx from "clsx";
 export interface dataText {
 	children: ReactNode;
-	asChild: boolean;
+	asChild?: boolean;
 	fontColor?:
 		| "text-black-900"
 		| "text-black-100"
+		| "text-black-300"
 		| "text-gray-900"
+		| "text-gray-700"
+		| "text-gray-600"
 		| "text-gray-500"
+		| "text-gray-400"
 		| "text-green-100"
 		| "text-green-800"
+		| "text-red-800"
 		| "text-white";
 	fontSize:
 		| "text-sm"
@@ -22,7 +27,8 @@ export interface dataText {
 		| "text-4xl"
 		| "text-42xl"
 		| "text-42px"
-		| "text-5xl";
+		| "text-5xl"
+		| "text-6xl";
 	lineHeight?: string;
 	fontWeight?: string;
 	textAlign?: "center" | "right" | "left" | "justify";
@@ -30,7 +36,7 @@ export interface dataText {
 }
 
 const Text = ({
-	asChild,
+	asChild = true,
 	children,
 	fontColor = "text-black-900",
 	fontSize,
