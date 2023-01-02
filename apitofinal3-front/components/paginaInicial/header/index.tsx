@@ -28,7 +28,9 @@ const Header = () => {
 					<li className="cursor-pointer">
 						<Link href={"./login"}>login</Link>
 					</li>
-					<li className="cursor-pointer">cadastre-se</li>
+					<li className="cursor-pointer">
+						<Link href={"/singup"}>cadastre-se</Link>
+					</li>
 				</ul>
 			</nav>
 		</header>
