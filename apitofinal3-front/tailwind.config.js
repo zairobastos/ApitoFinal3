@@ -14,9 +14,11 @@ module.exports = {
 			gray: {
 				900: "#f9f9f9",
 				700: "#7c7c7c",
+				650: "#959FA8",
 				600: "#e6e6e6",
 				500: "#e8e6e6",
 				400: "#a2a2a2",
+				300: "#FBFCFF",
 			},
 			green: {
 				100: "#00c041",
@@ -49,6 +51,9 @@ module.exports = {
 			lineHeight: {
 				"extra-loose": "2.5",
 				12: "3rem",
+			},
+			boxShadow: {
+				"3xl": "0px 2px 25px rgba(169, 169, 169, 0.2)",
 			},
 		},
 	},

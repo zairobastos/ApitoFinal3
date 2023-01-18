@@ -80,17 +80,19 @@ const Login = () => {
 						>
 							<p>Esqueceu a senha?</p>
 						</Text>
-						<button className="bg-green-800 rounded py-3">
-							<Text
-								fontSize="text-xl"
-								fontWeight="font-semibold"
-								fontColor="text-white"
-								lineHeight="leading-6"
-								textAlign="center"
-							>
-								<p>Entrar</p>
-							</Text>
-						</button>
+						<Link href="/apitofinal/home">
+							<button className="bg-green-800 rounded py-3 w-full">
+								<Text
+									fontSize="text-xl"
+									fontWeight="font-semibold"
+									fontColor="text-white"
+									lineHeight="leading-6"
+									textAlign="center"
+								>
+									<p>Entrar</p>
+								</Text>
+							</button>
+						</Link>
 						<Text
 							fontSize="text-base"
 							textAlign="left"
@@ -99,9 +101,11 @@ const Login = () => {
 						>
 							<p>
 								Ainda não tem conta?{" "}
-								<span className="text-green-800">
-									Criar Conta
-								</span>
+								<Link href="/singup">
+									<span className="text-green-800">
+										Criar Conta
+									</span>
+								</Link>
 							</p>
 						</Text>
 					</form>

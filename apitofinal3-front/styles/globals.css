@@ -8,4 +8,9 @@ html {
 }
 .fundo {
 	background-image: url(../assets/images/login/jogador.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.ativo1 {
+	border-top: 3px solid #00c041;
 }
